@@ -14,12 +14,12 @@ const homeReload = () => {
 
 voteButton.addEventListener("click", () => {
   if (!(radios[0].checked || radios[1].checked || radios[2].checked)) {
-    alert("Must select a candidate!");
+    alert("Choose your ice cream!");
     return false;
   }
 
   mainText.innerHTML =
-    "Vanilla wins, even though most people prefer some form of chocolate.  How can this be?";
+    "Vanilla wins in this case...even though most people prefer some form of chocolate";
   radios.forEach((radio) => (radio.style.visibility = "hidden"));
   cards.forEach((card) => card.classList.add("noHover"));
   moreButton.style.display = "block";
@@ -36,9 +36,7 @@ moreButton.addEventListener("click", infoTextChange);
 
 let clicks = -1;
 let explanation = [
-  "Is there a way to prevent this?",
-  "Approval voting lets you vote for all the candidates you approve of",
-  "Let's try it another way...",
+  "Approval voting lets you vote for all the candidates you approve of which in turn avoids this sort of negative scenario",
   "",
 ];
 
@@ -48,16 +46,17 @@ function infoTextChange() {
   if (clicks == 0) {
     mainText.innerHTML =
       "The chocolate lovers split their vote between the two choices.  This happens all the time in real elections.";
+    moreButton.innerHTML = "Show me a better way";
   }
-  if (clicks == 3) {
+  if (clicks == 1) {
     moreButtonChange();
   }
-  if (clicks == 4) {
+  if (clicks == 2) {
     location.assign("approval.html");
   }
 }
 
 const moreButtonChange = () => {
-  moreButton.innerHTML = "with Approval Voting!";
+  moreButton.innerHTML = "Let's try it!";
   moreButton.classList = "ui green button massive ui button";
 };

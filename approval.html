@@ -11,20 +11,25 @@
   </head>
 
   <body>
-    <div class="body">
+    <div class="main">
 
-      <div id="header">
-        <h2 class="titleText" onclick="homeReload()">What is Approval Voting?</h2></br>
-         <div id="mainTextBox">
-           <p id="mainText">Now pick all that you like or approve of...</p>
-         </div>
-       <button type="button" id="moreButton" class="ui red button massive ui button">More</button>
+      <div class="header">
+
+        <div id="titleBackground" onclick="homeReload()">
+          <h1>What is Approval Voting?</h1>
+        </div>
+
+      <div id="mainTextBox">
+        <p id="mainText">Pick all that you like or approve of...then VOTE</p>
       </div>
+
+      <button type="button" id="moreButton" class="ui red button massive ui button">Tell me why</button>
+
+    </div>
 
       <div class="card-body">
         <div class="card" id="chocolate1">
           <img src="images/chocolate1.jpg" alt="chocolate1" />
-          <p>Chocolate 1</p>
             <div id="appVoteBarChocolate1"><p>1759 </br> 47%</p></div>
 
           <input
@@ -37,7 +42,6 @@
 
         <div class="card" id="chocolate2">
           <img src="images/chocolate2.jpg" alt="chocolate2" />
-            <p>Chocolate 2</p>
             <div id="appVoteBarChocolate2"><p>1803 </br> 48%</p></div>
   
   
@@ -53,7 +57,6 @@
 
         <div class="card" id="vanilla">
           <img src="images/vanilla.jpg" alt="vanilla" />
-          <p>Vanilla</p>
           <div id="appVoteBarVanilla"><p>1589 </br> 42%</p></div>
 
 

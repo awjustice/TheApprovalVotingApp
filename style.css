@@ -5,11 +5,7 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-}
-
-.body {
+.main {
   background-image: url("images/voteBackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -18,54 +14,46 @@ body {
   align-items: center;
 }
 
-#titleText {
-  margin-left: 2%;
-}
-
-#mainTitle {
-  display: inline-block;
-  font-family: "Chivo", sans-serif;
-  color: black !important;
-  border: 4px solid black;
-  font-size: 2rem;
-}
-
-h2:hover {
-  cursor: pointer;
-}
-
-#mainTextBox {
+#titleBackground {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  height: 6rem;
-  width: 60%;
-  border-radius: 10px;
+  margin-left: 1%;
+  background-color: 	#e6e6fa;
+  height: 30%;
+  width: 23%;
+  margin-bottom: 0.5%;
+  border-radius: 5px;
+}
+
+#titleBackground:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#mainTextBox {
+  background-color:	#050505;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  height: 12vh;
+  width: 70%;
+  border-radius: 10px;
   margin: 0rem auto;
 }
 
 #mainText {
-  color: white;
+  color: lightskyblue
   font-family: "Chivo", sans-serif;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-style: italic;
 }
 
-p {
-  color: black;
-  font-weight: bolder;
-  font-family: "Chivo", sans-serif;
-  font-size: 2rem;
-  font-style: italic;
-}
-
-h4 {
-  color: azure;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5rem;
-}
 
 img {
   max-width: 100%;
@@ -76,14 +64,14 @@ img {
 .card-body {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 0.5%;
   margin-bottom: 0.5rem;
-  margin-top: 10px;
 }
 
 .card {
   width: 25%;
-  height: 60%;
-  background-color: #000080;
+  height: 100%;
+  background-color: 	#f0f8ff;
   border: 4px solid black;
   text-align: center;
   border-radius: 20px;
@@ -111,22 +99,26 @@ input[type="radio"] {
   height: 3rem;
   width: 3rem;
   vertical-align: middle;
-  margin-bottom: 5%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 input[type="checkbox"] {
   height: 40px;
   width: 40px;
   vertical-align: middle;
-  margin-bottom: 5%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 #moreButton {
   display: none;
   position: fixed;
+  width: 21%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  margin-top: 1%;
 }
 
 #voteBarChocolate1 {
